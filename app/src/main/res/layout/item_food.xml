@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/item_img_main"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/food1" />
+
+    <TextView
+        android:fontFamily="@font/primary_bold"
+        android:textSize="18sp"
+        android:textColor="?attr/colorOnPrimary"
+        android:layout_marginStart="8dp"
+        android:id="@+id/item_txt_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fasha Asian"
+        app:layout_constraintStart_toEndOf="@+id/item_img_main"
+        app:layout_constraintTop_toTopOf="@+id/item_img_main" />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:id="@+id/item_txt_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asian , sushi"
+        app:layout_constraintStart_toEndOf="@+id/item_img_main"
+        app:layout_constraintTop_toBottomOf="@+id/item_txt_subject" />
+
+    <TextView
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="8dp"
+        android:id="@+id/item_txt_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$12vip"
+        app:layout_constraintStart_toEndOf="@+id/item_img_main"
+        app:layout_constraintTop_toBottomOf="@+id/item_txt_city" />
+
+    <TextView
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="8dp"
+        android:id="@+id/item_txt_distanse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.2 miles from you"
+        app:layout_constraintStart_toEndOf="@+id/item_img_main"
+        app:layout_constraintTop_toBottomOf="@+id/item_txt_price" />
+
+    <RatingBar
+        android:progressTint="@color/yellow"
+        android:rating="2.5"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:id="@+id/item_rating_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:textSize="12sp"
+        android:layout_marginTop="4dp"
+        android:id="@+id/item_txt_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(90 Rating)"
+        app:layout_constraintEnd_toEndOf="@+id/item_rating_main"
+        app:layout_constraintStart_toStartOf="@+id/item_rating_main"
+        app:layout_constraintTop_toBottomOf="@+id/item_rating_main" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
